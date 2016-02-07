@@ -1,0 +1,11 @@
+<h1>Articles Public Listing</h1>
+<% @articles.each do |article| %>
+<div class="my-article">
+  <h2 class="article-title">
+    <%= article.title %>
+  </h2>
+  <div class="article-content">
+    <%= article.description %>
+  </div>
+</div>
+<% end %>
