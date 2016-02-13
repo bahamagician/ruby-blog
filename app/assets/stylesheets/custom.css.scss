@@ -11,7 +11,7 @@ $navbar-border-radius: 0px;
   font-weight: bold;
 }
 .jumbotron {
-  background-image: url(jumbo-bg.jpg);
+  background-image: asset-url('jumbo-bg.jpg');
   background-size:cover;
   height:500px;
   h1{
