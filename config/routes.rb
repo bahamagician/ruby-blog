@@ -8,8 +8,12 @@ Rails.application.routes.draw do
   get 'about' => 'pages#about'
   get 'articles/home' => 'articles#home'
   get 'signup' => 'users#new'
-  resources :users, except: [:new]
 
+  get 'login' => 'sessions#new'
+  post 'login' => 'sessions#create'
+  delete 'logout' => 'sessions#destroy'
+
+  resources :users, except: [:new]
   resources :articles
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
